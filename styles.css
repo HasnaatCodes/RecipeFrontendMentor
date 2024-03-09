@@ -141,10 +141,6 @@ h2 {
 	font-family: 'Young Serif';
 }
 
-p {
-	/* margin: 20px 0; */
-}
-
 p,
 li {
 	font-family: 'Outfit';
@@ -186,11 +182,11 @@ li {
 	width: 750px;
 	margin: 125px 0;
 	border-radius: 15px;
-	padding: 40px;
+	padding: 25px 0;
 }
 
 img {
-	width: 750px;
+	width: 90%;
 	height: 350px;
 	border-radius: 15px;
 }
@@ -210,6 +206,14 @@ img {
 	padding: 30px;
 	margin: 20px 0;
 	border-radius: 15px;
+}
+
+.image-container {
+	padding: 15px 0;
+}
+
+.content-container {
+	margin: 0 30px;
 }
 
 #prep-time {
@@ -252,4 +256,51 @@ td {
 .values {
 	color: #854632;
 	font-weight: 600;
+}
+
+@media (max-width: 600px) {
+	body {
+		background-color: white;
+	}
+
+	img {
+		width: 100%;
+		height: 200px;
+		border-radius: 0;
+	}
+
+	.container {
+		background-color: white;
+		width: 100vw;
+		margin: 0;
+		padding: 0;
+	}
+
+	.content-container {
+		margin: 0 25px;
+	}
+
+	.image-container {
+		padding: 0;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	p,
+	li {
+		font-size: 12px;
+	}
+
+	.preparation-time-container {
+		background-color: #fff7fb;
+		padding: 20px;
+		margin: 15px 0;
+		border-radius: 15px;
+	}
 }
